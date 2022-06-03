@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (t = 48; t <= 57; t++)
 			{
-				if (n == i || n == t || i == t || i <= t || t <= i)
+				if (n == i || n == t || i == t || i <= n || t <= i)
 				{
 
 				}
