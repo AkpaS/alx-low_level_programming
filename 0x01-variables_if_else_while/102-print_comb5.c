@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 /**
  * main - Entry point
@@ -11,40 +12,40 @@ int main(void)
 	int w;
 	int x;
 	int y;
-	int z = 48;
+	int z = 0;
 
-	while (z < 58)
+	while (z < 10)
 	{
-		y= 48;
-		while (y < 58)
+		y= 0;
+		while (y < 10)
 		{
-			x = 48;
-			while (x < 58)
+			x = 0;
+			while (x < 10)
 			{
-				w = 48;
-				while (w < 58)
+				w = 0;
+				while (w < 10)
 				{
 					if (!(z == w && y == x))
 					{
-						putchar('48' + z);
-						putchar('48' + y);
+						putchar('0' + z);
+						putchar('0' + y);
 						putchar(' ');
-						putchar('48' + x);
-						putchar('48' + w);
+						putchar('0' + x);
+						putchar('0' + w);
 						
-						if (!(z + y ==  && w + x == && x = 57))
+						if (!(z + y == 18  && w + x == 17  && x == 9))
 						{
 							putchar(',');
 							putchar(' ');
 						}
 					}
-					w++
+					w++;
 				}
-				x++
+				x++;
 			}
-			y++
+			y++;
 		}
-		z++
+		z++;
 	}
 
 	putchar('\n');
