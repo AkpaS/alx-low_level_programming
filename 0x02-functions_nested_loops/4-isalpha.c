@@ -1,16 +1,16 @@
 #include "main.h"
-include <ctype.h>
+#include <ctype.h>
 
 /**
- * @_isalpha - function checks whether a character is an alphabet or not
+ * _isalpha - function checks whether a character is an alphabet or not
  * 
  * @c character
- * @return int 
+ * Return: 0 0r 1
  */
 
 int _isalpha(int c);
 {
-    if(isalpha(c) || _islowe(c) )
+    if(isalpha(c) || islower(c) )
         return (1);
     else
         return (0); 
