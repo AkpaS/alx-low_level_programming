@@ -1,4 +1,6 @@
 #include "main.h"
+#include <ctype.h>
+
 /**
  * _islower - Returns values thaat are lowercase
  *
@@ -9,7 +11,7 @@
 int _islower(int c)
 {
 
-	if (c >= 99)
+	if (islower(c))
 		return (1);
 	else
 		return (0);
