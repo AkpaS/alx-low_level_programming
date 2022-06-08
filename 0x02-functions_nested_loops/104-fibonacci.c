@@ -16,7 +16,7 @@ int main(void)
 	h = 3;
 	while (h < 89)
 	{
-		printf("%lu, ", c);
+		printf("%lu, ", h);
 		x = y;
 		y = a;
 		a = x + y;
