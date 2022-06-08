@@ -35,9 +35,9 @@ int main(void)
 		d = f;
 		e = g;
 		f = b + d + ((c + e) / 1000000000);
-		e = (c + e) % 1000000000;
+		g = (c + e) % 1000000000;
 	}
-	printf("%lu%lu\n", f, e);
+	printf("%lu%lu\n", f, g);
 	return (0);
 
 }
