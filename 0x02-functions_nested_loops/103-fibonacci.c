@@ -21,6 +21,6 @@ int main(void)
 		y = z;
 		z = add;
 	}
-	printf("ld\n", Sadd);
+	printf("%ld\n", Sadd);
 	return (0);
 }
