@@ -12,11 +12,12 @@ int main(void)
 	unsigned long int x = 1, y = 2, a, b, c, d, e, f, g, h, i;
 
 	a = x + y;
+
 	printf("%lu, %lu, ", x, y);
 	h = 3;
 	while (h < 89)
 	{
-		printf("%lu, ", h);
+		printf("%lu, ", a);
 		x = y;
 		y = a;
 		a = x + y;
