@@ -31,11 +31,11 @@ int main(void)
 		}
 		if (x != 100)
 		{
-			printf(" ");
+		putchar(' ');
 		}
 		x++;
 
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
