@@ -22,7 +22,7 @@ int main(void)
 		a = a / 2;
 	}
 
-	for (b = 3; b <= a / 2; b = b + 2)
+	for (b = 3; b <= b / 2; b = b + 2)
 	{
 		while (a % b == 0)
 		{
