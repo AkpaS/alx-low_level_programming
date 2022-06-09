@@ -22,7 +22,7 @@ int main(void)
 		a = a / 2;
 	}
 
-	for (b = 3; b <= b / 2; b = b + 2)
+	for (b = 3; b <= a / 2; b = b + 2)
 	{
 		while (a % b == 0)
 		{
@@ -30,8 +30,11 @@ int main(void)
 			a = a / b;
 		}
 	}
+
 	if (a > 2)
+
 		x = a;
+
 	printf("%ld\n", x);
 	return (0);
 }
