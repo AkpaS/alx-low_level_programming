@@ -35,9 +35,8 @@ int main(void)
 		}
 
 		x++;
-
 	}
-
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
