@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	int x;
+	int x = 1;
 
-	for (x = 1; x <= 100; x++)
+	while (x <= 100)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
@@ -27,12 +27,13 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%i", x);
 		}
 		if (x != 100)
 		{
 			printf(" ");
 		}
+		x++;
 
 	}
 	printf("\n");
