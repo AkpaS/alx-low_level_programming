@@ -9,16 +9,16 @@
 
 int main(void)
 {
-	int a;
-	int b[5];
-	int *x;
+	int x;
+	int a[5];
+	int *y;
 
-	b[5] = 1024;
-	x = &a;
+	a[2] = 1024;
+	y = &x;
 
-	*(x + 5) = 98;
+	*(y + 5) = 98;
 
-	printf("b[5] = %d\n", b[5]);
+	printf("a[5] = %d\n", a[5]);
 	return (0);
 
 }
