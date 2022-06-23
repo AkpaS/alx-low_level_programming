@@ -34,7 +34,7 @@ int pre_pad(char *x, int y, int z)
 		return (1);
 	if (y == z - 1)
 		return (x[y] == x[z]);
-	if ((x[y] != x[z])
+	if (x[y] != x[z])
 		return (0);
 	return (pre_pad(x, y + 1, z - 1));
 
