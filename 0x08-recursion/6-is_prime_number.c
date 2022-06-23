@@ -22,6 +22,8 @@ int pre_prime(int x, int y)
 			return (pre_prime(x, y + 1));
 		}
 	}
+	else
+		return (1);
 }
 
 /**
