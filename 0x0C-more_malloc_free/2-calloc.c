@@ -5,8 +5,8 @@
 /**
  * _calloc - A func that allocates mem for an array
  *
- * @nmemb: the array
- * @size: of the elements of the array
+ * @nmemb: the elements in the array
+ * @size: size f the elements of the array
  *
  * Return: 0 if nmemb or size is 0
  * if malloc fails then _calloc returns NULL
