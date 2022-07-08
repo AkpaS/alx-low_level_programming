@@ -8,44 +8,42 @@
 
 void print_all(const char * const format, ...)
 {
+	unsigned int x;
 	va_list ap;
-	int x;
-	char *ceis;
-
-	x = 0;
+	char *c, *ceis;
 
 	va_start(ap, format);
-	while (format && format[x] != '\0')
+
+	ceis = "";
+
+	x = 0;
+	while (format && format[x])
 	{
 		switch (format[x])
 		{
 			case 'c':
-				printf("%c", va_arg(ap, int));
+				printf("%s%c", ceis,  va_arg(ap, int));
 				break;
 			case 'i':
-				printf("%d", va_arg(ap, int));
+				printf("%s%d", ceis, va_arg(ap, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(ap, double));
+				printf("%s%f", ceis, va_arg(ap, double));
 				break;
 			case 's':
-				ceis = va_arg(ap, char*);
-
-				if (format[x] == '\0')
-				{
-					printf("(nil)");
-					break;
-				}
-				printf("%s", ceis);
+				c = va_arg(ap, char *);
+				if (c == NULL)
+					c = "(nil)";
+				printf("%s%s", ceis, c);
 				break;
 			default:
 				x++;
-			continue;
+				continue;
 		}
-		if (format[x + 1] != '\0' && format)
-			printf(", ");
+		ceis = ", ";
 		x++;
 	}
-	va_end(ap);
+
 	printf("\n");
+	va_end(ap);
 }
