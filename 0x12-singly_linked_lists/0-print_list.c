@@ -18,6 +18,12 @@ size_t print_list(const list_t *h)
 	best = h;
 	while (best != NULL)
 	{
+		if (best->str == NULL)
+		{
+			printf("[0] (nil)\n");
+			best = best->next;
+			 x++;
+		}
 		printf("[%d] %s\n", best->len, best->str);
 		best = best->next;
 		x++;
