@@ -10,8 +10,7 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *node;
-	listint_t *x;
+	listint_t *node, *x;
 	size_t count;
 
 	count = 0;
